@@ -369,3 +369,120 @@ footer {
     background: #f1c40f;
   }
 }
+
+/* Nouvelle direction visuelle */
+:root {
+  --ink: #182022;
+  --muted: #657074;
+  --paper: #f7f7f4;
+  --white: #ffffff;
+  --yellow: #f4c400;
+  --green: #176b4d;
+  --line: #dfe3df;
+  --header-height: 76px;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--ink); font-family: Georgia, "Times New Roman", serif; padding-bottom: 0; }
+a { color: inherit; }
+.container { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+.narrow { max-width: 850px; }
+.site-header { position: fixed; inset: 0 0 auto; height: var(--header-height); background: var(--ink); color: var(--white); z-index: 10; }
+nav { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.logo { color: var(--white); font: 700 1rem/1 "Trebuchet MS", sans-serif; letter-spacing: .08em; text-decoration: none; }
+.logo span { display: inline-grid; place-items: center; width: 25px; height: 25px; margin-right: 8px; border: 2px solid var(--yellow); color: var(--yellow); font-size: 1.3rem; }
+.nav-links { display: flex; gap: 2rem; list-style: none; font: 600 .82rem/1 "Trebuchet MS", sans-serif; letter-spacing: .04em; }
+.nav-links a { color: #e7ebe7; text-decoration: none; }
+.nav-links a:hover, .nav-links a:focus-visible { color: var(--yellow); }
+.info-bar { position: fixed; top: var(--header-height); inset-inline: 0; z-index: 9; display: flex; justify-content: center; gap: 2rem; padding: 8px 20px; background: var(--yellow); color: var(--ink); font: 700 .72rem/1.3 "Trebuchet MS", sans-serif; letter-spacing: .04em; }
+.info-bar a { text-decoration: none; }
+main { padding-top: calc(var(--header-height) + 33px); margin-top: 0; }
+.hero { min-height: 570px; display: flex; align-items: center; background: var(--ink); color: var(--white); padding: 0; }
+.hero-content { padding-block: 7rem; }
+.eyebrow { margin-bottom: 1rem; color: var(--green); font: 700 .72rem/1.2 "Trebuchet MS", sans-serif; letter-spacing: .17em; text-transform: uppercase; }
+.hero .eyebrow { color: var(--yellow); }
+h1, h2, h3 { font-weight: 400; line-height: 1.08; }
+h1 { max-width: 700px; font-size: clamp(3.3rem, 7vw, 6.4rem); letter-spacing: -.04em; }
+.hero-text { max-width: 535px; margin: 1.6rem 0 2.2rem; color: #c6ceca; font-size: 1.18rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; border: 0; padding: 13px 22px; cursor: pointer; font: 700 .8rem/1 "Trebuchet MS", sans-serif; text-decoration: none; transition: transform .2s, background .2s; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { background: var(--yellow); color: var(--ink); }
+.button-primary:hover { background: #ffd21a; }
+.button-secondary { border: 1px solid #73807b; color: var(--white); }
+.button-secondary:hover { border-color: var(--yellow); color: var(--yellow); }
+.hero-note { margin-top: 1.3rem; color: #98a49f; font: .78rem/1.4 "Trebuchet MS", sans-serif; }
+.section { padding: 7rem 0; scroll-margin-top: calc(var(--header-height) + 33px); }
+.section h2 { max-width: 650px; font-size: clamp(2.3rem, 4vw, 4rem); letter-spacing: -.035em; }
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 3.5rem; border-top: 1px solid var(--line); }
+.service-card { min-height: 250px; padding: 2rem 1.5rem 1.5rem 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; text-align: left; }
+.service-number { margin-bottom: 2.5rem; color: var(--green); font: 700 .8rem/1 "Trebuchet MS", sans-serif; }
+.service-card h3 { margin-bottom: .8rem; font-size: 1.65rem; }
+.service-card p, .section-intro { max-width: 310px; color: var(--muted); font-size: 1rem; }
+.reassurance { background: var(--white); }
+.reassurance-grid, .reservation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
+.reassurance-list { border-top: 1px solid var(--line); }
+.reassurance-list p { display: grid; grid-template-columns: 1fr 1.5fr; gap: 1.5rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); font: .9rem/1.5 "Trebuchet MS", sans-serif; }
+.reassurance-list span { color: var(--muted); }
+.section-intro { max-width: 610px; margin: 1.5rem 0 2.5rem; font-size: 1.1rem; }
+.price-points { border-top: 1px solid var(--line); }
+.price-points div { display: flex; justify-content: space-between; gap: 2rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); font: .9rem/1.4 "Trebuchet MS", sans-serif; }
+.price-points span { color: var(--muted); text-align: right; }
+.reservation { background: #e8eee8; }
+.reservation-grid > div > p:not(.eyebrow) { max-width: 420px; margin-top: 1.5rem; color: var(--muted); font-size: 1.05rem; }
+.text-link { display: inline-block; margin-top: 1.5rem; color: var(--green); font: 700 .82rem "Trebuchet MS", sans-serif; text-decoration: none; }
+.text-link span { margin-left: 8px; }
+.booking-form { display: grid; gap: 1rem; padding: 2rem; background: var(--white); }
+label { display: grid; gap: 6px; color: var(--muted); font: 700 .7rem "Trebuchet MS", sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+input { width: 100%; border: 1px solid var(--line); border-radius: 0; padding: 12px; background: var(--paper); color: var(--ink); font: 1rem Georgia, serif; }
+input:focus { outline: 2px solid var(--green); outline-offset: 1px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.booking-form .button { width: 100%; margin-top: .5rem; }
+.contact { background: var(--ink); color: var(--white); text-align: center; }
+.contact h2 { color: var(--white); }
+.contact-inner { display: grid; justify-items: center; }
+.contact .eyebrow { color: var(--yellow); }
+.contact-phone { margin: 2rem 0 .5rem; color: var(--yellow); font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -.04em; text-decoration: none; }
+.contact-inner > p:last-child { color: #b7c0bb; font: .85rem "Trebuchet MS", sans-serif; }
+footer { padding: 2rem 0; background: #101718; color: #9ea9a4; font: .72rem "Trebuchet MS", sans-serif; }
+.action-bar { display: none; }
+.hamburger { display: none; border: 0; background: transparent; cursor: pointer; }
+.hamburger span { display: block; width: 25px; height: 2px; margin: 5px; background: var(--white); }
+:focus-visible { outline: 2px solid var(--yellow); outline-offset: 4px; }
+
+@media (max-width: 700px) {
+  body { padding-bottom: 62px; }
+  .container { width: min(100% - 32px, 560px); }
+  .site-header { height: 64px; }
+  .info-bar { top: 64px; gap: .7rem; justify-content: space-between; padding: 7px 16px; font-size: .62rem; }
+  main { padding-top: 93px; }
+  .hamburger { display: block; }
+  .nav-links { display: none; position: absolute; top: 64px; right: 0; left: 0; flex-direction: column; gap: 0; padding: .5rem 16px 1rem; background: var(--ink); }
+  .nav-links.open { display: flex; }
+  .nav-links a { display: block; padding: .75rem 0; border-bottom: 1px solid #303c3a; }
+  .hero { min-height: 520px; }
+  .hero-content { padding-block: 5rem; }
+  h1 { font-size: clamp(3rem, 15vw, 4.8rem); }
+  .hero-text { font-size: 1rem; }
+  .button { width: 100%; }
+  .section { padding: 5rem 0; }
+  .section h2 { font-size: 2.7rem; }
+  .services, .reassurance-grid, .reservation-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .service-card { min-height: 0; padding: 1.5rem 0; }
+  .service-number { margin-bottom: 1rem; }
+  .reassurance-list p { grid-template-columns: 1fr; gap: .35rem; }
+  .price-points div { display: grid; gap: .35rem; }
+  .price-points span { text-align: left; }
+  .booking-form { padding: 1.25rem; }
+  .action-bar { position: fixed; right: 0; bottom: 0; left: 0; z-index: 20; display: grid; grid-template-columns: 1fr 1fr; height: 62px; box-shadow: 0 -3px 14px #18202222; font: 700 .8rem "Trebuchet MS", sans-serif; }
+  .action-bar a { display: grid; place-items: center; text-decoration: none; }
+  .action-bar a:first-child { background: var(--green); color: var(--white); }
+  .action-bar a:last-child { background: var(--yellow); color: var(--ink); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; }
+}
+
+.reservation-grid, .booking-form, input { min-width: 0; }

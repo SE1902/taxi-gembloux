@@ -3,247 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taxi Gembloux - Transport Professionnel</title>
-
-    <meta
-      name="description"
-      content="Service de taxi fiable et professionnel à Gembloux et Namur. Courses locales, aéroports, gares. Réservation 24h/24, 7j/7."
-    />
-
+    <title>Taxi Gembloux | Namur, gares et aéroports 24h/24</title>
+    <meta name="description" content="Taxi à Gembloux et Namur : trajets locaux, gares et aéroports. Réservez votre course 24h/24 par téléphone ou WhatsApp." />
+    <meta property="og:title" content="Taxi Gembloux | Trajets locaux et aéroports" />
+    <meta property="og:description" content="Réservez votre taxi à Gembloux et Namur par téléphone ou WhatsApp." />
+    <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="container">
-        <div class="logo">🚕 TAXI</div>
+    <header class="site-header">
+      <nav class="container" aria-label="Navigation principale">
+        <a class="logo" href="#accueil" aria-label="Taxi Gembloux, accueil"><span aria-hidden="true">+</span> TAXI GEMBLOUX</a>
         <ul class="nav-links" id="nav-links">
-          <li><a href="#accueil">Accueil</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#tarifs">Tarifs</a></li>
+          <li><a href="#reservation">Réserver</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button
-          class="hamburger"
-          id="hamburger"
-          aria-label="Ouvrir le menu"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Ouvrir le menu" aria-controls="nav-links" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
       </nav>
     </header>
 
-    <div class="info-bar">
-      <span>⏰ Disponible 24h/24 - 7j/7</span>
-      <span>📞 +32 491 24 48 20</span>
-      <span>📍 Gembloux &amp; Namur</span>
+    <div class="info-bar" aria-label="Informations pratiques">
+      <span><strong>24h/24</strong> · 7j/7</span>
+      <a href="tel:+32491244820">+32 491 24 48 20</a>
+      <span>Gembloux · Namur</span>
     </div>
 
     <main>
       <section id="accueil" class="hero">
-        <div class="container">
-          <h1>Transport Professionnel</h1>
-          <p>Service de taxi fiable et ponctuel dans la région de Gembloux</p>
-          <a href="tel:+32491244820" class="cta-button">Appeler Maintenant</a>
+        <div class="container hero-content">
+          <p class="eyebrow">Taxi local · Wallonie</p>
+          <h1>Votre trajet, simplement.</h1>
+          <p class="hero-text">Un service de taxi disponible à Gembloux, Namur et vers les gares et aéroports de la région.</p>
+          <div class="hero-actions">
+            <a href="tel:+32491244820" class="button button-primary">Appeler le taxi</a>
+            <a href="#reservation" class="button button-secondary">Réserver une course</a>
+          </div>
+          <p class="hero-note">Réponse rapide par téléphone ou WhatsApp</p>
         </div>
       </section>
 
       <section id="services" class="section">
         <div class="container">
-          <h2>Nos Services</h2>
+          <p class="eyebrow">Pour vos déplacements</p>
+          <h2>Un taxi pour chaque destination</h2>
           <div class="services">
-            <div class="service-card">
-              <div class="service-icon">🏠</div>
-              <h3>Courses Locales</h3>
-              <p>
-                Transport dans Gembloux et Namur. Disponible 7j/7 pour tous vos
-                déplacements quotidiens.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">✈️</div>
-              <h3>Aéroports</h3>
-              <p>
-                Liaison vers les aéroports de Bruxelles, Charleroi. Ponctualité
-                garantie pour vos vols.
-              </p>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">🚉</div>
-              <h3>Gares</h3>
-              <p>
-                Transport vers les gares de Gembloux, Namur, Bruxelles et autres
-                destinations ferroviaires.
-              </p>
-            </div>
+            <article class="service-card"><div class="service-number">01</div><h3>Trajets locaux</h3><p>Déplacements quotidiens à Gembloux, Namur et dans les communes voisines.</p></article>
+            <article class="service-card"><div class="service-number">02</div><h3>Aéroports</h3><p>Départs et retours depuis Bruxelles-Zaventem et Charleroi, sur réservation.</p></article>
+            <article class="service-card"><div class="service-number">03</div><h3>Gares</h3><p>Transferts vers Gembloux, Namur, Bruxelles et les principales gares de Belgique.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="section info-section">
-        <div class="container">
-          <div class="info-grid">
-            <div class="info-card">
-              <h3>⏰ Disponibilité</h3>
-              <p>
-                Service disponible 24h/24, 7j/7. Réservation recommandée pour
-                les courses tôt le matin ou tard le soir.
-              </p>
-            </div>
-            <div class="info-card">
-              <h3>🚗 Véhicule</h3>
-              <p>
-                Véhicule récent, climatisé et confortable. Entretien régulier et
-                assurance tous risques.
-              </p>
-            </div>
-            <div class="info-card">
-              <h3>💳 Paiement</h3>
-              <p>
-                Paiement en espèces ou par carte bancaire. Factures disponibles
-                sur demande.
-              </p>
-            </div>
-            <div class="info-card">
-              <h3>📱 Réservation</h3>
-              <p>
-                Réservation par téléphone. Service de courses immédiates selon
-                disponibilité.
-              </p>
-            </div>
-          </div>
+      <section class="section reassurance">
+        <div class="container reassurance-grid">
+          <div><p class="eyebrow">Un service clair</p><h2>Confortable, ponctuel, sans détour.</h2></div>
+          <div class="reassurance-list"><p><strong>Disponible à toute heure</strong><span>Courses immédiates selon disponibilité. Réservation conseillée pour les départs matinaux.</span></p><p><strong>Paiement facile</strong><span>Espèces ou carte bancaire. Facture disponible sur demande.</span></p><p><strong>Véhicule confortable</strong><span>Véhicule récent, climatisé et entretenu régulièrement.</span></p></div>
         </div>
       </section>
 
       <section id="tarifs" class="section">
-        <div class="container">
-          <h2>Tarification</h2>
-          <div class="info-grid">
-            <div class="info-card">
-              <h3>🏢 Tarif de base</h3>
-              <p>
-                Prise en charge + tarif au kilomètre selon la grille officielle.
-                Suppléments de nuit et weekend applicables.
-              </p>
-            </div>
-            <div class="info-card">
-              <h3>✈️ Forfaits Aéroports</h3>
-              <p>
-                Tarifs forfaitaires disponibles pour les liaisons vers les
-                aéroports. Devis sur demande.
-              </p>
-            </div>
-            <div class="info-card">
-              <h3>🌙 Nuit & Weekend</h3>
-              <p>
-                Supplément applicable de 22h à 6h et les weekends. Tarif majoré
-                conformément à la réglementation.
-              </p>
-            </div>
-          </div>
+        <div class="container narrow">
+          <p class="eyebrow">Tarifs</p><h2>Un prix annoncé avant le départ</h2>
+          <p class="section-intro">Le prix dépend de la distance, de l’horaire et de la destination. Demandez votre estimation par téléphone ou WhatsApp avant la course.</p>
+          <div class="price-points"><div><strong>Course locale</strong><span>Compteur selon la réglementation en vigueur</span></div><div><strong>Aéroport ou gare</strong><span>Forfait possible sur demande</span></div><div><strong>Nuit et week-end</strong><span>Suppléments communiqués lors de la réservation</span></div></div>
         </div>
       </section>
 
-      <section id="contact" class="section contact">
-        <div class="container">
-          <h2>Contact</h2>
-          <div class="contact-info">
-            <div class="contact-item">
-              <h3>📞 Téléphone</h3>
-              <p>+32 491 24 48 20</p>
-            </div>
-            <div class="contact-item">
-              <h3>📍 Zone de Service</h3>
-              <p>Gembloux et Namur<br />Wallonie, Belgique</p>
-            </div>
-            <div class="contact-item">
-              <h3>🕒 Horaires</h3>
-              <p>24h/24 - 7j/7<br />Sur réservation</p>
-            </div>
-          </div>
+      <section id="reservation" class="section reservation">
+        <div class="container reservation-grid">
+          <div><p class="eyebrow">Réservation</p><h2>Préparez votre demande en 30 secondes.</h2><p>Indiquez les informations essentielles. WhatsApp s’ouvrira avec votre demande déjà rédigée.</p><a href="https://wa.me/32491244820" class="text-link" target="_blank" rel="noopener noreferrer">Écrire directement sur WhatsApp <span aria-hidden="true">→</span></a></div>
+          <form id="booking-form" class="booking-form">
+            <label for="name">Votre nom<input id="name" name="name" type="text" autocomplete="name" required /></label>
+            <div class="form-row"><label for="date">Date<input id="date" name="date" type="date" required /></label><label for="time">Heure<input id="time" name="time" type="time" required /></label></div>
+            <label for="pickup">Lieu de départ<input id="pickup" name="pickup" type="text" placeholder="Adresse ou gare" required /></label>
+            <label for="destination">Destination<input id="destination" name="destination" type="text" placeholder="Adresse, gare ou aéroport" required /></label>
+            <button class="button button-primary" type="submit">Préparer ma réservation</button>
+          </form>
         </div>
       </section>
+
+      <section id="contact" class="section contact"><div class="container contact-inner"><p class="eyebrow">Contact</p><h2>Besoin d’un taxi maintenant ?</h2><a class="contact-phone" href="tel:+32491244820">+32 491 24 48 20</a><p>Gembloux, Namur et alentours · Disponible 24h/24, 7j/7</p></div></section>
     </main>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 - Taxi Gembloux - Transport Professionnel - Wallonie</p>
-      </div>
-    </footer>
-
-    <a
-      href="tel:+32491244820"
-      class="phone-fixed"
-      aria-label="Appeler le taxi au +32 491 24 48 20"
-      >📞 Appeler</a
-    >
-    <a
-      href="https://wa.me/32491244820"
-      class="whatsapp-fixed"
-      target="_blank"
-      rel="noopener"
-      aria-label="Contacter le taxi par WhatsApp"
-      >💬 WhatsApp</a
-    >
+    <footer><div class="container"><p>&copy; 2026 Taxi Gembloux · Wallonie, Belgique</p></div></footer>
+    <div class="action-bar"><a href="https://wa.me/32491244820" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="tel:+32491244820">Appeler</a></div>
 
     <script>
-      // Menu hamburger
       const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("nav-links");
-
       hamburger.addEventListener("click", () => {
         const isOpen = navLinks.classList.toggle("open");
         hamburger.classList.toggle("open", isOpen);
-        hamburger.setAttribute("aria-expanded", isOpen);
+        hamburger.setAttribute("aria-expanded", String(isOpen));
       });
-
-      // Fermer le menu au clic sur un lien
-      navLinks.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinks.classList.remove("open");
-          hamburger.classList.remove("open");
-          hamburger.setAttribute("aria-expanded", "false");
-        });
-      });
-
-      // Smooth scrolling pour la navigation
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
-
-      // Animation d'apparition des éléments au scroll
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-          }
-        });
-      }, observerOptions);
-
-      // Observer les cartes de service
-      document.querySelectorAll(".service-card, .info-card").forEach((card) => {
-        card.style.opacity = "0";
-        card.style.transform = "translateY(20px)";
-        card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-        observer.observe(card);
+      navLinks.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+        navLinks.classList.remove("open"); hamburger.classList.remove("open"); hamburger.setAttribute("aria-expanded", "false");
+      }));
+      document.getElementById("booking-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        const message = `Bonjour, je souhaite réserver un taxi.\nNom : ${data.get("name")}\nDate : ${data.get("date")} à ${data.get("time")}\nDépart : ${data.get("pickup")}\nDestination : ${data.get("destination")}`;
+        window.open(`https://wa.me/32491244820?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
       });
     </script>
   </body>
