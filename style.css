@@ -445,6 +445,8 @@ input:focus { outline: 2px solid var(--green); outline-offset: 1px; }
 .contact-phone { margin: 2rem 0 .5rem; color: var(--yellow); font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -.04em; text-decoration: none; }
 .contact-inner > p:last-child { color: #b7c0bb; font: .85rem "Trebuchet MS", sans-serif; }
 footer { padding: 2rem 0; background: #101718; color: #9ea9a4; font: .72rem "Trebuchet MS", sans-serif; }
+.footer-content { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.footer-content a { color: var(--yellow); text-decoration: none; }
 .action-bar { display: none; }
 .hamburger { display: none; border: 0; background: transparent; cursor: pointer; }
 .hamburger span { display: block; width: 25px; height: 2px; margin: 5px; background: var(--white); }
