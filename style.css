@@ -239,25 +239,6 @@ footer {
   transform: scale(1.05);
 }
 
-.whatsapp-fixed {
-  position: fixed;
-  bottom: 30px;
-  right: 160px;
-  background: #25d366;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-  z-index: 1000;
-  transition: transform 0.3s;
-}
-
-.whatsapp-fixed:hover {
-  transform: scale(1.05);
-}
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -347,8 +328,7 @@ footer {
   }
 
   /* Boutons fixes — centrés avec espace entre eux */
-  .phone-fixed,
-  .whatsapp-fixed {
+  .phone-fixed {
     position: fixed;
     bottom: 20px;
     top: auto;
@@ -357,14 +337,6 @@ footer {
     transform: none;
     padding: 13px 20px;
     font-size: 0.95rem;
-  }
-
-  .whatsapp-fixed {
-    left: 8px;
-    background: #25d366;
-  }
-
-  .phone-fixed {
     right: 8px;
     background: #f1c40f;
   }

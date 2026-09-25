@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taxi Gembloux | Namur, gares et aéroports 24h/24</title>
-    <meta name="description" content="Taxi à Gembloux et Namur : trajets locaux, gares et aéroports. Réservez votre course 24h/24 par téléphone ou WhatsApp." />
+    <meta name="description" content="Taxi à Gembloux et Namur : trajets locaux, gares et aéroports. Réservez votre course 24h/24 par téléphone." />
     <meta property="og:title" content="Taxi Gembloux | Trajets locaux et aéroports" />
-    <meta property="og:description" content="Réservez votre taxi à Gembloux et Namur par téléphone ou WhatsApp." />
+    <meta property="og:description" content="Réservez votre taxi à Gembloux et Namur par téléphone." />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style.css" />
@@ -43,7 +43,7 @@
             <a href="tel:+32491244820" class="button button-primary">Appeler le taxi</a>
             <a href="#reservation" class="button button-secondary">Réserver une course</a>
           </div>
-          <p class="hero-note">Réponse rapide par téléphone ou WhatsApp</p>
+          <p class="hero-note">Réponse rapide par téléphone</p>
         </div>
       </section>
 
@@ -69,14 +69,14 @@
       <section id="tarifs" class="section">
         <div class="container narrow">
           <p class="eyebrow">Tarifs</p><h2>Un prix annoncé avant le départ</h2>
-          <p class="section-intro">Le prix dépend de la distance, de l’horaire et de la destination. Demandez votre estimation par téléphone ou WhatsApp avant la course.</p>
+          <p class="section-intro">Le prix dépend de la distance, de l’horaire et de la destination. Demandez votre estimation par téléphone avant la course.</p>
           <div class="price-points"><div><strong>Course locale</strong><span>Compteur selon la réglementation en vigueur</span></div><div><strong>Aéroport ou gare</strong><span>Forfait possible sur demande</span></div><div><strong>Nuit et week-end</strong><span>Suppléments communiqués lors de la réservation</span></div></div>
         </div>
       </section>
 
       <section id="reservation" class="section reservation">
         <div class="container reservation-grid">
-          <div><p class="eyebrow">Réservation</p><h2>Préparez votre demande en 30 secondes.</h2><p>Indiquez les informations essentielles. WhatsApp s’ouvrira avec votre demande déjà rédigée.</p><a href="https://wa.me/32491244820" class="text-link" target="_blank" rel="noopener noreferrer">Écrire directement sur WhatsApp <span aria-hidden="true">→</span></a></div>
+          <div><p class="eyebrow">Réservation</p><h2>Préparez votre demande en 30 secondes.</h2><p>Indiquez les informations essentielles, puis appelez directement au numéro ci-dessous.</p><a href="tel:+32491244820" class="text-link">Appeler le +32 491 24 48 20 <span aria-hidden="true">→</span></a></div>
           <form id="booking-form" class="booking-form">
             <label for="name">Votre nom<input id="name" name="name" type="text" autocomplete="name" required /></label>
             <div class="form-row"><label for="date">Date<input id="date" name="date" type="date" required /></label><label for="time">Heure<input id="time" name="time" type="time" required /></label></div>
@@ -91,7 +91,7 @@
     </main>
 
     <footer><div class="container footer-content"><p>&copy; 2026 Élite Transport · Taxi Gembloux · Wallonie, Belgique</p><a href="mentions-legales.html">Mentions légales</a></div></footer>
-    <div class="action-bar"><a href="https://wa.me/32491244820" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="tel:+32491244820">Appeler</a></div>
+    <div class="action-bar"><a href="tel:+32491244820">+32 491 24 48 20</a><a href="tel:+32491244820">Appeler</a></div>
 
     <script>
       const hamburger = document.getElementById("hamburger");
@@ -106,9 +106,7 @@
       }));
       document.getElementById("booking-form").addEventListener("submit", (event) => {
         event.preventDefault();
-        const data = new FormData(event.currentTarget);
-        const message = `Bonjour, je souhaite réserver un taxi.\nNom : ${data.get("name")}\nDate : ${data.get("date")} à ${data.get("time")}\nDépart : ${data.get("pickup")}\nDestination : ${data.get("destination")}`;
-        window.open(`https://wa.me/32491244820?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+        window.location.href = "tel:+32491244820";
       });
     </script>
   </body>
