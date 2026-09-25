@@ -76,13 +76,13 @@
 
       <section id="reservation" class="section reservation">
         <div class="container reservation-grid">
-          <div><p class="eyebrow">Réservation</p><h2>Préparez votre demande en 30 secondes.</h2><p>Indiquez les informations essentielles, puis appelez directement au numéro ci-dessous.</p><a href="tel:+32491244820" class="text-link">Appeler le +32 491 24 48 20 <span aria-hidden="true">→</span></a></div>
+          <div><p class="eyebrow">Réservation</p><h2>Préparez votre demande en 30 secondes.</h2><p>Indiquez les informations essentielles, puis envoyez un message au numéro ci-dessous.</p><a href="tel:+32491244820" class="text-link">Appeler le +32 491 24 48 20 <span aria-hidden="true">→</span></a></div>
           <form id="booking-form" class="booking-form">
             <label for="name">Votre nom<input id="name" name="name" type="text" autocomplete="name" required /></label>
             <div class="form-row"><label for="date">Date<input id="date" name="date" type="date" required /></label><label for="time">Heure<input id="time" name="time" type="time" required /></label></div>
             <label for="pickup">Lieu de départ<input id="pickup" name="pickup" type="text" placeholder="Adresse ou gare" required /></label>
             <label for="destination">Destination<input id="destination" name="destination" type="text" placeholder="Adresse, gare ou aéroport" required /></label>
-            <button class="button button-primary" type="submit">Préparer ma réservation</button>
+            <button class="button button-primary" type="submit">Envoyer ma réservation</button>
           </form>
         </div>
       </section>
@@ -106,7 +106,9 @@
       }));
       document.getElementById("booking-form").addEventListener("submit", (event) => {
         event.preventDefault();
-        window.location.href = "tel:+32491244820";
+        const data = new FormData(event.currentTarget);
+        const message = `Bonjour, je souhaite réserver un taxi.\nNom : ${data.get("name")}\nDate : ${data.get("date")} à ${data.get("time")}\nDépart : ${data.get("pickup")}\nDestination : ${data.get("destination")}`;
+        window.location.href = `sms:+32491244820?body=${encodeURIComponent(message)}`;
       });
     </script>
   </body>
